@@ -27,7 +27,7 @@ class Solution {  //not an optimised appraoch  O n2 .
         int leftheight = maxheight(root.left);//passing to check  height
         int rightheight = maxheight(root.right);
         int dia = leftheight + rightheight;
-        //we will check height for subtree to make sure
+        //we will check height for subtree to make sure for edge cases
         int sub = Math.max(diameterOfBinaryTree(root.left) ,diameterOfBinaryTree(root.right));
         return Math.max(dia , sub);
     }
